@@ -3,80 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Botanita Co. - Menú</title>
+    <title>La Botanita Co. - Cocina Botánica</title>
 </head>
 <body>
 
-    <!-- NOMBRE DEL RESTAURANTE -->
-    <h1>LA BOTANITA CO.</h1>
-    <p><i>Cocina botánica, fresca y consciente</i></p>
+    <!-- CABECERA DE LA PÁGINA -->
+    <header>
+        <h1>LA BOTANITA CO.</h1>
+        <p><i>Cocina botánica, fresca y consciente</i></p>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Nosotros</a></li>
+                <li><a href="#menu">Nuestra Carta</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <section id="inicio">
+            <h2>Nuestra Filosofía</h2>
+            <p>
+                En <strong>La Botanita Co.</strong> creemos en el poder nutritivo y transformador de las plantas. 
+                Elaboramos cada platillo utilizando ingredientes orgánicos, locales y de temporada, promoviendo 
+                una alimentación saludable, sostenible y llena de sabor.
+            </p>
+        </section>
+        <hr>
+        <section id="menu">
+            <h2>Nuestra Carta</h2>
+
+            <table border="1" style="width:100%; border-collapse: collapse;">
+                <caption><strong>Menú General</strong></caption>
+                
+                <thead>
+                    <tr bgcolor="#1b4d3e" style="color:white;">
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Platillo / Bebida</th>
+                        <th scope="col">Ingredientes</th>
+                        <th scope="col">Precio (Bs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Entradas</th>
+                        <td>Ensalada de Verduras seleccionadas</td>
+                        <td>Pan de masa madre, Verduras</td>
+                        <td align="right">6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Sopa de Mani</td>
+                        <td>Carne de res, Verduras Aumadas y papas fritas</td>
+                        <td align="right">10.00</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Platos Fuertes</th>
+                        <td>[Pollo a las Mostaza]</td>
+                        <td>Arroz Primavera , pieza de pollo, Ensalada Rusa </td>
+                        <td align="right">13.50</td>
+                    </tr>
+                    <tr>
+                        <td>Salmón Herbal a las Brasas</td>
+                        <td>Lomo de salmón, costra de finas hierbas y espárragos</td>
+                        <td align="right">18.00</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Bebidas</th>
+                        <td>Jugo Fría de Limón</td>
+                        <td>zumo de limón y miel de agave</td>
+                        <td align="right">4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Infusión de Manzanilla</td>
+                        <td>yerbas, manzanillas, Miel del chaco </td>
+                        <td align="right">5.50</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <small>* Todos los precios incluyen impuestos.</small>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
 
     <hr>
 
-    <!-- MENÚ EN UNA TABLA -->
-    <h2>Nuestra Carta</h2>
-
-    <table border="1" style="width:100%; border-collapse: collapse;">
-        <caption><strong>Menú General</strong></caption>
-        
-        <thead>
-            <tr bgcolor="#1b4d3e" style="color:white;">
-                <th scope="col">Categoría</th>
-                <th scope="col">Platillo / Bebida</th>
-                <th scope="col">Ingredientes</th>
-                <th scope="col">Precio ($)</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <!-- ENTRADAS -->
-            <tr>
-                <th rowspan="2" scope="rowgroup">Entradas</th>
-                <td>Tostadas de Aguacate Botánico</td>
-                <td>Pan de masa madre, aguacate, brotes de alfalfa y chía</td>
-                <td align="right">8.50</td>
-            </tr>
-            <tr>
-                <td>Crema Orgánica de Calabaza</td>
-                <td>Calabaza de Castilla, leche de coco y semillas tostadas</td>
-                <td align="right">7.00</td>
-            </tr>
-
-            <!-- PLATOS FUERTES -->
-            <tr>
-                <th rowspan="2" scope="rowgroup">Platos Fuertes</th>
-                <td>Bowl Silvestre de Quinua</td>
-                <td>Quinua real, camote asado, kale y aderezo de maracuyá</td>
-                <td align="right">13.50</td>
-            </tr>
-            <tr>
-                <td>Salmón Herbal a las Brasas</td>
-                <td>Lomo de salmón, costra de finas hierbas y espárragos</td>
-                <td align="right">18.00</td>
-            </tr>
-
-            <!-- BEBIDAS -->
-            <tr>
-                <th rowspan="2" scope="rowgroup">Bebidas</th>
-                <td>Infusión Fría de Lavanda y Limón</td>
-                <td>Flores de lavanda orgánica, zumo de limón y miel de agave</td>
-                <td align="right">4.50</td>
-            </tr>
-            <tr>
-                <td>Smoothie Verde Antioxidante</td>
-                <td>Espinaca, manzana verde, jengibre y agua de coco</td>
-                <td align="right">5.50</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="4" align="center">
-                    <small>* Todos los precios incluyen impuestos[span_2](start_span)[span_2](end_span).</small>
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto">
+        <h3>Contacto y Ubicación</h3>
+        <p><strong>Dirección:</strong> Calle Bolivar entre Av. Tacna Nro 190</p>
+        <p><strong>Teléfono:</strong> 74479802</p>
+        <p><strong>Horarios:</strong> Lunes a Sábado de 11:00 a 22:00 hrs.</p>
+        <p><small>&copy; 2026 La Botanita Co. - Todos los derechos reservados.</small></p>
+    </footer>
 
 </body>
 </html>
