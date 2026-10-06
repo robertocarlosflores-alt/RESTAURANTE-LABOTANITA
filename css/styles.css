@@ -1,0 +1,319 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* ================================
+VARIABLES
+================================ */
+
+:root {
+--primary-color: #1b4d3e;
+--accent-color: #88b04b;
+--bg-light: #f4f6f0;
+--text-dark: #2c3e50;
+--text-muted: #666666;
+--white: #ffffff;
+--card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+ESTILOS GENERALES
+================================ */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+background-color: var(--bg-light);
+color: var(--text-dark);
+}
+
+/* ================================
+CABECERA
+================================ */
+
+header {
+background:
+linear-gradient(
+rgba(27, 77, 62, 0.85),
+rgba(27, 77, 62, 0.85)
+),
+url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1350&q=80')
+center / cover no-repeat;
+
+color: var(--white);
+text-align: center;
+padding: 60px 20px 40px;
+
+
+}
+
+header h1 {
+font-size: 2.8rem;
+letter-spacing: 3px;
+margin-bottom: 5px;
+}
+
+header p {
+font-size: 1.2rem;
+font-weight: 300;
+margin-bottom: 25px;
+}
+
+/* ================================
+MENÚ DE NAVEGACIÓN
+================================ */
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 0;
+}
+
+nav a {
+color: var(--white);
+text-decoration: none;
+font-weight: 600;
+padding: 8px 16px;
+border-radius: 20px;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: var(--accent-color);
+}
+
+/* ================================
+MAIN
+================================ */
+
+main {
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+/* ================================
+SECCIONES
+================================ */
+
+section {
+background-color: var(--white);
+border-radius: 12px;
+padding: 30px;
+margin-bottom: 30px;
+box-shadow: var(--card-shadow);
+}
+
+/* ================================
+SECCIÓN FILOSOFÍA
+================================ */
+
+#inicio {
+background-image:
+linear-gradient(
+to right,
+rgba(255, 255, 255, 0.95),
+rgba(255, 255, 255, 0.85)
+),
+url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80');
+
+background-size: cover;
+background-position: center;
+
+
+}
+
+#inicio p {
+font-size: 1.05rem;
+}
+
+/* ================================
+TÍTULOS
+================================ */
+
+h2 {
+color: var(--primary-color);
+font-size: 1.8rem;
+margin-bottom: 15px;
+border-bottom: 2px solid var(--accent-color);
+display: inline-block;
+padding-bottom: 5px;
+}
+
+/* ================================
+TABLA
+================================ */
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+overflow: hidden;
+border-radius: 8px;
+border: none;
+}
+
+/* Título de la tabla */
+
+caption {
+font-size: 1.3rem;
+margin-bottom: 15px;
+color: var(--primary-color);
+}
+
+/* Encabezado */
+
+thead tr {
+background-color: var(--primary-color);
+color: var(--white);
+}
+
+thead th {
+font-weight: 600;
+}
+
+/* Celdas */
+
+th,
+td {
+padding: 12px 16px;
+text-align: left;
+border: 1px solid #e2e8f0;
+}
+
+/* Filas pares */
+
+tbody tr:nth-child(even) {
+background-color: #f8fafc;
+}
+
+/* Efecto al pasar el mouse */
+
+tbody tr:hover {
+background-color: #f1f5f9;
+}
+
+/* Categorías */
+
+tbody th[scope="rowgroup"] {
+background-color: #e8f5e9;
+color: var(--primary-color);
+font-weight: bold;
+text-align: center;
+vertical-align: middle;
+}
+
+/* Precios */
+
+.precio {
+text-align: right;
+font-weight: bold;
+color: var(--primary-color);
+white-space: nowrap;
+}
+
+/* Pie de tabla */
+
+tfoot td {
+background-color: #f8fafc;
+color: var(--text-muted);
+font-style: italic;
+padding: 10px;
+text-align: center;
+}
+
+/* ================================
+FOOTER
+================================ */
+
+footer {
+background-color: var(--primary-color);
+color: var(--white);
+text-align: center;
+padding: 40px 20px 20px;
+margin-top: 50px;
+}
+
+footer h3 {
+margin-bottom: 15px;
+color: var(--accent-color);
+}
+
+footer p {
+margin-bottom: 8px;
+font-size: 0.95rem;
+}
+
+footer small {
+display: block;
+margin-top: 20px;
+opacity: 0.7;
+}
+
+/* ================================
+RESPONSIVE - CELULARES
+================================ */
+
+@media (max-width: 600px) {
+
+header {
+    padding: 40px 15px 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+}
+
+main {
+    margin: 25px auto;
+    padding: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 10px 12px;
+}
+
+footer {
+    padding: 30px 15px 20px;
+}
+
+
+}
