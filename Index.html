@@ -1,8 +1,14 @@
-<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>La Botanita Co. - Cocina Botánica</title>
-<!-- Enlace al archivo CSS -->
-<link rel="stylesheet" href="css/styles.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Botanita Co. - Cocina Botánica</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-</head> <body>
 <!-- CABECERA DE LA PÁGINA -->
 <header>
     <h1>LA BOTANITA RESTAURANT</h1>
@@ -48,137 +54,139 @@
 
         <h2>Nuestra Carta</h2>
 
-        <table>
+        <div class="table-container">
+            <table>
 
-            <caption>
-                <strong>Menú General</strong>
-            </caption>
+                <caption>
+                    <strong>Menú General</strong>
+                </caption>
 
-            <thead>
-                <tr>
-                    <th scope="col">Categoría</th>
-                    <th scope="col">Platillo / Bebida</th>
-                    <th scope="col">Ingredientes</th>
-                    <th scope="col">Precio (Bs)</th>
-                </tr>
-            </thead>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Platillo / Bebida</th>
+                        <th scope="col">Ingredientes</th>
+                        <th scope="col">Precio (Bs)</th>
+                    </tr>
+                </thead>
 
-            <tbody>
+                <tbody>
 
-                <!-- ENTRADAS -->
-                <tr>
-                    <th rowspan="2" scope="rowgroup">
-                        Entradas
-                    </th>
+                    <!-- ENTRADAS -->
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">
+                            Entradas
+                        </th>
 
-                    <td>
-                        Ensalada de Verduras Seleccionadas
-                    </td>
+                        <td>
+                            Ensalada de Verduras Seleccionadas
+                        </td>
 
-                    <td>
-                        Pan de masa madre, verduras
-                    </td>
+                        <td>
+                            Pan de masa madre, verduras
+                        </td>
 
-                    <td class="precio">
-                        6.50
-                    </td>
-                </tr>
+                        <td class="precio">
+                            6.50
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>
-                        Sopa de Maní
-                    </td>
+                    <tr>
+                        <td>
+                            Sopa de Maní
+                        </td>
 
-                    <td>
-                        Carne de res, verduras ahumadas y papas fritas
-                    </td>
+                        <td>
+                            Carne de res, verduras ahumadas y papas fritas
+                        </td>
 
-                    <td class="precio">
-                        10.00
-                    </td>
-                </tr>
-
-
-                <!-- PLATOS FUERTES -->
-                <tr>
-                    <th rowspan="2" scope="rowgroup">
-                        Platos Fuertes
-                    </th>
-
-                    <td>
-                        Pollo a la Mostaza
-                    </td>
-
-                    <td>
-                        Arroz primavera, pieza de pollo y ensalada rusa
-                    </td>
-
-                    <td class="precio">
-                        13.50
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Salmón Herbal a las Brasas
-                    </td>
-
-                    <td>
-                        Lomo de salmón, costra de finas hierbas y espárragos
-                    </td>
-
-                    <td class="precio">
-                        18.00
-                    </td>
-                </tr>
+                        <td class="precio">
+                            10.00
+                        </td>
+                    </tr>
 
 
-                <!-- BEBIDAS -->
-                <tr>
-                    <th rowspan="2" scope="rowgroup">
-                        Bebidas
-                    </th>
+                    <!-- PLATOS FUERTES -->
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">
+                            Platos Fuertes
+                        </th>
 
-                    <td>
-                        Jugo Frío de Limón
-                    </td>
+                        <td>
+                            Pollo a la Mostaza
+                        </td>
 
-                    <td>
-                        Zumo de limón y miel de agave
-                    </td>
+                        <td>
+                            Arroz primavera, pieza de pollo y ensalada rusa
+                        </td>
 
-                    <td class="precio">
-                        4.50
-                    </td>
-                </tr>
+                        <td class="precio">
+                            13.50
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>
-                        Infusión de Manzanilla
-                    </td>
+                    <tr>
+                        <td>
+                            Salmón Herbal a las Brasas
+                        </td>
 
-                    <td>
-                        Hierbas, manzanilla y miel del Chaco
-                    </td>
+                        <td>
+                            Lomo de salmón, costra de finas hierbas y espárragos
+                        </td>
 
-                    <td class="precio">
-                        5.50
-                    </td>
-                </tr>
+                        <td class="precio">
+                            18.00
+                        </td>
+                    </tr>
 
-            </tbody>
 
-            <tfoot>
-                <tr>
-                    <td colspan="4">
-                        <small>
-                            * Todos los precios incluyen impuestos.
-                        </small>
-                    </td>
-                </tr>
-            </tfoot>
+                    <!-- BEBIDAS -->
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">
+                            Bebidas
+                        </th>
 
-        </table>
+                        <td>
+                            Jugo Frío de Limón
+                        </td>
+
+                        <td>
+                            Zumo de limón y miel de agave
+                        </td>
+
+                        <td class="precio">
+                            4.50
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Infusión de Manzanilla
+                        </td>
+
+                        <td>
+                            Hierbas, manzanilla y miel del Chaco
+                        </td>
+
+                        <td class="precio">
+                            5.50
+                        </td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <small>
+                                * Todos los precios incluyen impuestos.
+                            </small>
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
 
     </section>
 
@@ -213,4 +221,5 @@
 
 </footer>
 
-</body> </html>
+</body>
+</html>
