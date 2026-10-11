@@ -28,16 +28,24 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+
+
+    background-color: white;
+    color: black;
+
+
     background-color: var(--page-bg);
     color: var(--text-dark);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* =========================
-   MODO OSCURO
-========================= */
+
 
 body.dark-mode {
+
+    background-color: #121212;
+    color: white;
+
+    /* Variables originales para adaptar toda la página */
     --primary-color: #a4d6b2;
     --accent-color: #9bc76a;
     --page-bg: #121a17;
@@ -53,9 +61,6 @@ body.dark-mode {
     --group-bg: #2b4034;
 }
 
-/* =========================
-   ENCABEZADO
-========================= */
 
 header {
     background:
@@ -83,9 +88,6 @@ header p {
     margin-bottom: 25px;
 }
 
-/* =========================
-   BOTONES DEL ENCABEZADO
-========================= */
 
 .header-controls {
     display: flex;
@@ -104,7 +106,6 @@ header p {
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-mode-btn:hover {
@@ -120,7 +121,6 @@ nav a:focus-visible {
     outline-offset: 4px;
 }
 
-/* El botón hamburguesa se oculta en escritorio */
 
 .menu-toggle {
     display: none;
@@ -138,10 +138,7 @@ nav a:focus-visible {
     background-color: #ffffff;
     margin: 5px 0;
     border-radius: 3px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-/* Animación de hamburguesa a X */
 
 .menu-toggle.active span:first-child {
     transform: translateY(8px) rotate(45deg);
@@ -154,10 +151,6 @@ nav a:focus-visible {
 .menu-toggle.active span:last-child {
     transform: translateY(-8px) rotate(-45deg);
 }
-
-/* =========================
-   NAVEGACIÓN
-========================= */
 
 nav ul {
     list-style: none;
@@ -174,16 +167,11 @@ nav a {
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #88b04b;
 }
-
-/* =========================
-   CONTENIDO PRINCIPAL
-========================= */
 
 main {
     max-width: 1000px;
@@ -197,12 +185,8 @@ section {
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: var(--card-shadow);
-    transition: background-color 0.3s ease;
 }
 
-/* =========================
-   FILOSOFÍA
-========================= */
 
 #inicio {
     background-image:
@@ -240,9 +224,6 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* =========================
-   TABLA DEL MENÚ
-========================= */
 
 .table-container {
     width: 100%;
@@ -309,9 +290,7 @@ tfoot td {
     text-align: center;
 }
 
-/* =========================
-   PIE DE PÁGINA
-========================= */
+
 
 footer {
     background-color: #1b4d3e;
@@ -337,9 +316,7 @@ footer small {
     opacity: 0.7;
 }
 
-/* =========================
-   TABLET Y CELULAR
-========================= */
+
 
 @media (max-width: 600px) {
 
@@ -355,8 +332,6 @@ footer small {
     header p {
         font-size: 1rem;
     }
-
-    /* Botones en la parte superior */
 
     .header-controls {
         gap: 10px;
@@ -381,7 +356,7 @@ footer small {
         margin-top: 20px;
     }
 
-    /* Menú visible al pulsar el botón */
+    /* Mostrar menú cuando se abre */
 
     nav.open {
         display: block;
@@ -409,8 +384,6 @@ footer small {
     h2 {
         font-size: 1.5rem;
     }
-
-    /* Desplazamiento horizontal de la tabla */
 
     .table-container {
         overflow-x: auto;
@@ -440,6 +413,7 @@ footer small {
     *,
     *::before,
     *::after {
-        transition-duration: 0.01ms !important;
+        transition: none !important;
+        animation: none !important;
     }
 }
