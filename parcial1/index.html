@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante La Botanita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="inicio">
+
+    <header>
+        <h1>Restaurante La Botanita</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Nuestros platillos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Nuestros platillos</h2>
+            <p>Disfruta de las mejores botanitas y platos caseros con el mejor sabor del barrio.</p>
+            <ul>
+                <li>Plato de la casa - Bs 30</li>
+                <li>Porcion de picadita - Bs 20</li>
+                <li>Jarra de refresco casero - Bs 10</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Deja tu encargo</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div>
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" required>
+                </div>
+                <div>
+                    <label for="encargo">Tu encargo:</label>
+                    <textarea id="encargo"></textarea>
+                </div>
+            </form>
+            
+            <button type="button" id="btn-confirmar">Confirmar encargo</button>
+            <p id="mensaje" class="oculto"></p>
+        </section>
+    </main>
+
+    <footer>
+        Parcial 1 - Roberto Carlos Flores Choque - 12 de octubre de 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
