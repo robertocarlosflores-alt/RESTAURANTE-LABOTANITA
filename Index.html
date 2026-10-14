@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,7 +19,6 @@
         <i>Cocina botánica, fresca y consciente</i>
     </p>
 
-    <!-- Botones de navegación -->
     <div class="header-controls">
         <button
             id="darkModeBtn"
@@ -26,7 +26,7 @@
             type="button"
             aria-label="Activar modo oscuro"
             aria-pressed="false">
-            Modo Nocturno 
+            ☾ Modo oscuro
         </button>
 
         <button
@@ -44,17 +44,9 @@
 
     <nav id="mainNav">
         <ul>
-            <li>
-                <a href="#inicio">Nosotros</a>
-            </li>
-
-            <li>
-                <a href="#menu">Nuestra Carta</a>
-            </li>
-
-            <li>
-                <a href="#contacto">Contacto</a>
-            </li>
+            <li><a href="#inicio">Nosotros</a></li>
+            <li><a href="#menu">Nuestra Carta</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -73,12 +65,10 @@
     </section>
 
     <section id="menu">
-
         <h2>Nuestra Carta</h2>
 
         <div class="table-container">
             <table>
-
                 <caption>
                     <strong>Menú General</strong>
                 </caption>
@@ -93,11 +83,8 @@
                 </thead>
 
                 <tbody>
-
                     <tr>
-                        <th rowspan="2" scope="rowgroup">
-                            Entradas
-                        </th>
+                        <th rowspan="2" scope="rowgroup">Entradas</th>
                         <td>Ensalada de Verduras Seleccionadas</td>
                         <td>Pan de masa madre, verduras</td>
                         <td class="precio">6.50</td>
@@ -110,9 +97,7 @@
                     </tr>
 
                     <tr>
-                        <th rowspan="2" scope="rowgroup">
-                            Platos Fuertes
-                        </th>
+                        <th rowspan="2" scope="rowgroup">Platos Fuertes</th>
                         <td>Pollo a la Mostaza</td>
                         <td>Arroz primavera, pieza de pollo y ensalada rusa</td>
                         <td class="precio">13.50</td>
@@ -125,9 +110,7 @@
                     </tr>
 
                     <tr>
-                        <th rowspan="2" scope="rowgroup">
-                            Bebidas
-                        </th>
+                        <th rowspan="2" scope="rowgroup">Bebidas</th>
                         <td>Jugo Frío de Limón</td>
                         <td>Zumo de limón y miel de agave</td>
                         <td class="precio">4.50</td>
@@ -138,33 +121,27 @@
                         <td>Hierbas, manzanilla y miel del Chaco</td>
                         <td class="precio">5.50</td>
                     </tr>
-
                 </tbody>
 
                 <tfoot>
                     <tr>
                         <td colspan="4">
-                            <small>
-                                * Todos los precios incluyen impuestos.
-                            </small>
+                            <small>* Todos los precios incluyen impuestos.</small>
                         </td>
                     </tr>
                 </tfoot>
-
             </table>
         </div>
-
     </section>
 
 </main>
 
 <footer id="contacto">
-
-    <h3>Contacto y Ubicación</h3>
+    <h3>Contacto</h3>
 
     <p>
         <strong>Dirección:</strong>
-        Calle Bolivar entre Av. Tacna Nro 190
+        Calle Bolívar entre Av. Tacna Nro. 190
     </p>
 
     <p>
@@ -174,16 +151,63 @@
 
     <p>
         <strong>Horarios:</strong>
-        Lunes a Sábado de 11:00 a 22:00 hrs.
+        Lunes a sábado de 11:00 a 22:00 hrs.
     </p>
 
-    <p>
+    <!-- FORMULARIO DE CONTACTO -->
+    <form id="form-pedido" novalidate>
+
+        <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre completo"
+                autocomplete="name">
+        </div>
+
+        <div class="campo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@gmail.com"
+                autocomplete="email">
+        </div>
+
+        <div class="campo-formulario">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="Cuéntanos qué necesitas..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            Enviar Mensaje
+        </button>
+
+        <!-- ALERTA DE VALIDACIÓN -->
+        <p
+            id="error-pedido"
+            class="aviso"
+            role="alert"
+            aria-live="polite"
+            hidden>
+        </p>
+
+    </form>
+
+    <p class="copyright">
         <small>
             &copy; 2026 La Botanita Co. - Todos los derechos reservados.
         </small>
     </p>
-
 </footer>
 
 </body>
 </html>
+```
