@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salteneria El Horno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Salteneria El Horno</h1>
+        <p>
+            En nuestra salteneria preparamos saltenas deliciosas
+            para que disfrutes de un buen sabor en cada pedido que realizes.
+        </p>
+    </header>
+
+    <main>
+       <form id="form-horno" action="procesar.php" method="POST" novalidate>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <p id="aviso-nombre" class="aviso"></p>
+
+    <label for="correo">Correo electronico:</label>
+    <input type="email" id="correo" name="correo" required>
+    <p id="aviso-correo" class="aviso"></p>
+
+    <label for="pedido">Que saltenas queres:</label>
+    <textarea id="pedido" name="pedido" required></textarea>
+    <p id="aviso-pedido" class="aviso"></p>
+
+    <button type="submit">Hacer mi pedido</button>
+
+    <p id="aviso-horno" class="aviso"></p>
+</form>
+    </main>
+
+    <footer>
+        <p>Parcial 2 -ROBERTO CARLOS FLORES CHOQUE- 20 de octubre de 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
