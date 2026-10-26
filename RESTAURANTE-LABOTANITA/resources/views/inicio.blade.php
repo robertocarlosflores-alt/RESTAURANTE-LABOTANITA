@@ -1,0 +1,201 @@
+@extends('layouts.base')
+
+@section('title', 'La Botanita Co. - Cocina Botánica')
+
+@section('content')
+<header>
+    <h1>LA BOTANITA RESTAURANT</h1>
+
+    <p>
+        <i>Cocina botánica, fresca y consciente</i>
+    </p>
+
+    <div class="header-controls">
+        <button
+            id="darkModeBtn"
+            class="dark-mode-btn"
+            type="button"
+            aria-label="Activar modo oscuro"
+            aria-pressed="false">
+            ☾ Modo oscuro
+        </button>
+
+        <button
+            id="menuToggle"
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mainNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#inicio">Nosotros</a></li>
+            <li><a href="#menu">Nuestra Carta</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio">
+        <h2>Nuestra Filosofía</h2>
+
+        <p>
+            En <strong>La Botanita Co.</strong> creemos en el poder nutritivo
+            y transformador de las plantas. Elaboramos cada platillo utilizando
+            ingredientes orgánicos, locales y de temporada, promoviendo una
+            alimentación saludable, sostenible y llena de sabor.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Nuestra Carta</h2>
+
+        <div class="table-container">
+            <table>
+                <caption>
+                    <strong>Menú General</strong>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Platillo / Bebida</th>
+                        <th scope="col">Ingredientes</th>
+                        <th scope="col">Precio (Bs)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Entradas</th>
+                        <td>Ensalada de Verduras Seleccionadas</td>
+                        <td>Pan de masa madre, verduras</td>
+                        <td class="precio">6.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sopa de Maní</td>
+                        <td>Carne de res, verduras ahumadas y papas fritas</td>
+                        <td class="precio">10.00</td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Platos Fuertes</th>
+                        <td>Pollo a la Mostaza</td>
+                        <td>Arroz primavera, pieza de pollo y ensalada rusa</td>
+                        <td class="precio">13.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salmón Herbal a las Brasas</td>
+                        <td>Lomo de salmón, costra de finas hierbas y espárragos</td>
+                        <td class="precio">18.00</td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Bebidas</th>
+                        <td>Jugo Frío de Limón</td>
+                        <td>Zumo de limón y miel de agave</td>
+                        <td class="precio">4.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Infusión de Manzanilla</td>
+                        <td>Hierbas, manzanilla y miel del Chaco</td>
+                        <td class="precio">5.50</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <small>* Todos los precios incluyen impuestos.</small>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer id="contacto">
+    <h3>Contacto</h3>
+
+    <p>
+        <strong>Dirección:</strong>
+        Calle Bolívar entre Av. Tacna Nro. 190
+    </p>
+
+    <p>
+        <strong>Teléfono:</strong>
+        74479802
+    </p>
+
+    <p>
+        <strong>Horarios:</strong>
+        Lunes a sábado de 11:00 a 22:00 hrs.
+    </p>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <form id="form-pedido" novalidate>
+
+        <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre completo"
+                autocomplete="name">
+        </div>
+
+        <div class="campo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@gmail.com"
+                autocomplete="email">
+        </div>
+
+        <div class="campo-formulario">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="Cuéntanos qué necesitas..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            Enviar Mensaje
+        </button>
+
+        <!-- ALERTA DE VALIDACIÓN -->
+        <p
+            id="error-pedido"
+            class="aviso"
+            role="alert"
+            aria-live="polite"
+            hidden>
+        </p>
+
+    </form>
+
+    <p class="copyright">
+        <small>
+            &copy; 2026 La Botanita Co. - Todos los derechos reservados.
+        </small>
+    </p>
+</footer>
+@endsection
