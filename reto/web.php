@@ -57,6 +57,7 @@ Route::get('/tortas', function () {
 })->name('tortas');
 
 
+/* REGISTRAR UNA TORTA */
 
 Route::post('/tortas/nuevo', function (Request $request) {
 
